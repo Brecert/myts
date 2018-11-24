@@ -15,9 +15,9 @@ const ArrayExtensions = {
 
 Object.assign(Array.prototype, ArrayExtensions)
 
-interface IArray<T> {
+interface Array<T> {
   /**
-   * Sets the default value of an Array
+   * Sets the default value of the Array
    */
-  defaultValue<U>(value: U)
+  defaultValue<U>(value: U): this
 }
