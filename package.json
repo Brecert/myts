@@ -1,0 +1,19 @@
+{
+  "name": "myts",
+  "version": "0.0.1",
+  "description": "My version of the standard library. Done poorly.",
+  "main": "index.js",
+  "author": "brecert",
+  "license": "MIT",
+  "devDependencies": {
+    "onchange": "^5.1.1",
+    "prettier": "1.15.2",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.6"
+  },
+  "scripts": {
+    "lint": "tslint -c tslint.json 'src/**/*.ts'",
+    "prettier-watch": "onchange '**/*.ts' -- prettier typescript --write {{changed}}"
+  }
+}
