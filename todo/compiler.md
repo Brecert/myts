@@ -18,7 +18,7 @@ I personally like def as all the keys are close together
 ```js
 def stuff() {}
 
-def* stuff() {}
+def* generator() {}
 
 fn stuff() {}
 
