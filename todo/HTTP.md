@@ -38,5 +38,13 @@ app.get `/api/:version/users`, ctx => {
   ctx.paramaters.version 
   // 'v2'
 }
+
+// assuming '/api/v2/users/v2/id
+// todo: make this make sense
+app.get `/api/:version/users`, ctx => {
+  ctx.get `/:version/id`, ctx => {
+  }
+}
+
 ```
 
