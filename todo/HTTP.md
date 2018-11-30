@@ -33,7 +33,7 @@ client.close()
 const app = new WebApp()
 
 // Assuming a get request is sent to '/api/v2/users'
-app.get `/api/:version/users`, ctx,  => {
+app.get `/api/:version/users`, ctx => {
   ctx.paramaters.version 
   // 'v2'
 }
