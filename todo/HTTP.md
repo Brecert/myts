@@ -30,23 +30,41 @@ client.close()
 ## Server (nodejs)
 ```
 ```
+## Websocket
+```
+```
 ## WebApp (nodejs)
 ```js
 const app = new WebApp()
 
 // Assuming a get request is sent to '/api/v2/users'
-// Using template literals to make syntax more lightweight
+// Using optional template literals to make syntax more lightweight
 app.get `/api/:version/users`, ctx => {
   ctx.paramaters.version 
   // 'v2'
 }
 
-// assuming '/api/v2/users/v2/id
+// assuming '/api/v2/users/v2/id'
 // todo: make this make sense
 app.get `/api/:version/users`, ctx => {
   ctx.get `/:version/id`, ctx => {
   }
 }
 
+// With websockets
+// assuming connected to '/api/v2/general' with message 'Hello World!'
+app.ws `/api/:version/:room_id`, (ws, ctx) => {
+  const { version, room_id } = ctx.paramaters
+
+  ws.on('message', msg => {
+    msg // 'Hello World!'
+  })
+  
+  ws.on('close', msg => {
+    // socket closed
+  })
+  
+  ws.send("connected to #{room_id}") // 'connected to general'
+}
 ```
 
