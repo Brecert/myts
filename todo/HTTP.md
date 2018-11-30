@@ -33,6 +33,7 @@ client.close()
 const app = new WebApp()
 
 // Assuming a get request is sent to '/api/v2/users'
+// Using template literals to make syntax more lightweight
 app.get `/api/:version/users`, ctx => {
   ctx.paramaters.version 
   // 'v2'
