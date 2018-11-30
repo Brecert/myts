@@ -15,8 +15,7 @@ res.statusCode // 200
 // Uses generators as an iterative function to provide "streaming" to/as the result.
 // Still async but with a little more conventional usage and more flexible.
 const res = HTTP.Client.get("https://www.example.com/", res => {
-  res.statusCode
-  // 200
+  res.statusCode // 200
 })
 
 
