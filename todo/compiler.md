@@ -82,6 +82,7 @@ onlyArg => arg {
 But not others
 ```js
 // too much noise and open and close not visible
+// using `()` would be a good idea here
 client.get "https://example.com/", {query: "where am i"} do res, ctx {
 }
 ```
