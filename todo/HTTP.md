@@ -1,6 +1,7 @@
 Create a better HTTP class and subclasses
 
-# Client
+# Complete
+## Client
 ```js
 class HTTP {
   Client
@@ -26,9 +27,9 @@ res.statusCode // 200
 client.close()
 ```
 
-## Todo
-# Server (nodejs)
-# WebApp (nodejs)
+# Incomplete or Todo
+## Server (nodejs)
+## WebApp (nodejs)
 ```js
 const app = new WebApp()
 
