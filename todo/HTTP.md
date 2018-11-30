@@ -51,6 +51,8 @@ app.get `/api/:version/users`, ctx => {
   }
 }
 
+// Websocket inspired from https://razecr.com/docs/websockets
+
 // With websockets
 // assuming connected to '/api/v2/general' with message 'Hello World!'
 app.ws `/api/:version/:room_id`, (ws, ctx) => {
