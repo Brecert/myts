@@ -2,7 +2,7 @@
   "name": "myts",
   "version": "0.0.1",
   "description": "My version of the standard library. Done poorly.",
-  "main": "lib/index.js",
+  "main": "lib/src",
   "author": "brecert",
   "license": "MIT",
   "devDependencies": {
@@ -17,7 +17,7 @@
     "prettier-watch": "onchange '**/*.ts' -- prettier typescript --write {{changed}}"
   },
   "directories": {
-    "lib": "./lib",
-    "test": "./spec"
+    "lib": "lib/src",
+    "test": "spec"
   }
 }
