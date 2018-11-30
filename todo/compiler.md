@@ -86,3 +86,11 @@ But not others
 client.get "https://example.com/", {query: "where am i"} do res, ctx {
 }
 ```
+
+That's about all I would change.
+
+I would like to change the *entire* language but then it's not javascript.
+
+This is simply meant as a time saving version of js.
+
+(obviously with typescript support)
