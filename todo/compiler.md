@@ -15,7 +15,7 @@ function definitions are renamed to a compiler option (usually fn or def)
 It's a very small change that would save a lot of keystrokes and time
 
 I personally like def as all the keys are close together
-```
+```js
 def stuff() {}
 
 def* stuff() {}
@@ -30,7 +30,7 @@ Another problem with with javascript are the callbacks.
 While less common now with promises, async and await, they are still commonly used.
 
 Blocks should be sometimes that flows
-```
+```js
 // from
 // using the url for nosie
 client.get("https://example.com/", (res, ctx) => {
@@ -54,7 +54,7 @@ A third (and optional) change would be to make `()` optional for functions with 
 
 While having `(arg, arg2)` does keep consistency and sometimes readabilty, it can waste time writing, especially for trivial operations
 
-```
+```js
 // from
 console.log("Hello World!")
 
@@ -63,7 +63,7 @@ console.log "Hello World!"
 ```
 
 This can work well with certain blocks
-```
+```js
 // from
 onlyCallback(() => {
 })
@@ -80,7 +80,7 @@ onlyArg => arg {
 ```
 
 But not others
-```
+```js
 // too much noise and open and close not visible
 client.get "https://example.com/", {query: "where am i"} do res, ctx {
 }
